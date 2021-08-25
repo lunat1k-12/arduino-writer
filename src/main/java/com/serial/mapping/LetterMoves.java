@@ -15,7 +15,7 @@ public enum LetterMoves {
             new ServoMoves(SleepOperation.get(), SleepOperation.get(), IncreaseDrawOperation.of(10)),
             new ServoMoves(IncreaseDrawOperation.of(5), SleepOperation.get(), SleepOperation.get()),
             new ServoMoves(SleepOperation.get(), IncreaseDrawOperation.of(5), SleepOperation.get()),
-            new ServoMoves(DecreaseDrawOperation.of(15), SleepOperation.get(), SleepOperation.get()),
+            new ServoMoves(DecreaseDrawOperation.of(10), SleepOperation.get(), SleepOperation.get()),
             new ServoMoves(SleepOperation.get(), DecreaseDrawOperation.of(5), SleepOperation.get()),
             new ServoMoves(DecreaseDrawOperation.of(5), SleepOperation.get(), SleepOperation.get())
     )),
@@ -57,6 +57,83 @@ public enum LetterMoves {
             new ServoMoves(SleepOperation.get(), DecreaseDrawOperation.of(5), SleepOperation.get()),
             new ServoMoves(SleepOperation.get(), SleepOperation.get(), IncreaseDrawOperation.of(10)),
             new ServoMoves(DecreaseDrawOperation.of(5), SleepOperation.get(), SleepOperation.get())
+    )),
+
+    I_LETTER('И', List.of(
+            new ServoMoves(SleepOperation.get(), IncreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), SleepOperation.get(), DecreaseDrawOperation.of(10)),
+            new ServoMoves(SleepOperation.get(), DecreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), IncreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(DecreaseDrawOperation.of(5), SleepOperation.get(), IncreaseDrawOperation.of(10)),
+            new ServoMoves(SleepOperation.get(), DecreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), IncreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), SleepOperation.get(), DecreaseDrawOperation.of(10)),
+            new ServoMoves(SleepOperation.get(), DecreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), SleepOperation.get(), IncreaseDrawOperation.of(10)),
+            new ServoMoves(DecreaseDrawOperation.of(5), SleepOperation.get(), SleepOperation.get())
+            )),
+    D_LETTER('Д', List.of(
+            new ServoMoves(SleepOperation.get(), SleepOperation.get(), DecreaseDrawOperation.of(7)),
+            new ServoMoves(SleepOperation.get(), IncreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(DecreaseDrawOperation.of(11), SleepOperation.get(), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), DecreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), IncreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), SleepOperation.get(), DecreaseDrawOperation.of(3)),
+            new ServoMoves(SleepOperation.get(), DecreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), SleepOperation.get(), IncreaseDrawOperation.of(3)),
+            new ServoMoves(IncreaseDrawOperation.of(11), SleepOperation.get(), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), IncreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), SleepOperation.get(), DecreaseDrawOperation.of(5)),
+            new ServoMoves(SleepOperation.get(), DecreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), SleepOperation.get(), IncreaseDrawOperation.of(3)),
+            new ServoMoves(DecreaseDrawOperation.of(3), SleepOperation.get(), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), IncreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), SleepOperation.get(), IncreaseDrawOperation.of(6)),
+            new ServoMoves(SleepOperation.get(), DecreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), IncreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(DecreaseDrawOperation.of(5), SleepOperation.get(), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), DecreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), IncreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), SleepOperation.get(), DecreaseDrawOperation.of(3)),
+            new ServoMoves(SleepOperation.get(), DecreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), SleepOperation.get(), IncreaseDrawOperation.of(5)),
+            new ServoMoves(DecreaseDrawOperation.of(8), SleepOperation.get(), SleepOperation.get())
+    )),
+
+    O_LETTER('О', List.of(
+            new ServoMoves(SleepOperation.get(), IncreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), SleepOperation.get(), DecreaseDrawOperation.of(10)),
+            new ServoMoves(SleepOperation.get(), DecreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), SleepOperation.get(), IncreaseDrawOperation.of(10)),
+            new ServoMoves(SleepOperation.get(), IncreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(DecreaseDrawOperation.of(5), SleepOperation.get(), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), DecreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), IncreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), SleepOperation.get(), DecreaseDrawOperation.of(10)),
+            new ServoMoves(SleepOperation.get(), DecreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), IncreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(IncreaseDrawOperation.of(5), SleepOperation.get(), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), DecreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(DecreaseDrawOperation.of(10), SleepOperation.get(), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), SleepOperation.get(), IncreaseDrawOperation.of(10))
+    )),
+
+    R_LETTER('Р', List.of(
+            new ServoMoves(SleepOperation.get(), IncreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), SleepOperation.get(), DecreaseDrawOperation.of(10)),
+            new ServoMoves(SleepOperation.get(), DecreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), SleepOperation.get(), IncreaseDrawOperation.of(10)),
+            new ServoMoves(SleepOperation.get(), IncreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(DecreaseDrawOperation.of(5), SleepOperation.get(), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), DecreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), IncreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), SleepOperation.get(), DecreaseDrawOperation.of(5)),
+            new ServoMoves(SleepOperation.get(), DecreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), IncreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(IncreaseDrawOperation.of(5), SleepOperation.get(), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), DecreaseDrawOperation.of(5), SleepOperation.get()),
+            new ServoMoves(DecreaseDrawOperation.of(10), SleepOperation.get(), SleepOperation.get()),
+            new ServoMoves(SleepOperation.get(), SleepOperation.get(), IncreaseDrawOperation.of(5))
     ));
 
     LetterMoves(char letter, List<ServoMoves> operations) {
