@@ -15,7 +15,7 @@ import java.util.List;
 
 public class WriterService {
 
-    private static int line[] = new int[]{120, 70, 95};
+    private static int line[] = new int[]{120, 73, 95};
     private final WriteState state;
 
     public WriterService(WriteState state) {
@@ -43,13 +43,16 @@ public class WriterService {
         }
 
         List<ServoMoves> moves = getMoves(text);
-        for (ServoMoves move :moves) {
+        Integer currentMove = 1;
+        for (ServoMoves move : moves) {
             while (state.isNotReady()) {
                 Thread.sleep(500);
             }
             pos = move.countPositions(pos);
             sp.getOutputStream().write(buildCommand(pos).getBytes(StandardCharsets.UTF_8));
             sp.getOutputStream().flush();
+            System.out.printf("\rMove: %s:%s", currentMove, moves.size());
+            currentMove++;
             state.setNotReady();
         }
 

@@ -31,7 +31,7 @@ public class BluetoothListener implements SerialPortDataListener {
             message = message.trim();
             response.append(message);
             if (response.toString().contains("done;")) {
-                System.out.println("ready again");
+//                System.out.println("ready again");
                 response.setLength(0);
                 state.setReady();
             }
